@@ -1,0 +1,1 @@
+<head><style>body {background-color: powderblue;}</style></head><body><p id="p1">GUID should replace this</p><script>document.addEventListener('PacificDidiReceiveNatvieCallback', function (event) {document.getElementsById('p1').innerHTML = event.detail.parameters.guid;});window.webkit.messageHandlers.pacific.postMessage('readClientGuid');console.log('123');</script></body>
